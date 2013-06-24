@@ -13,13 +13,13 @@ RUNNABLE=wordcount.jar
 SRC_PATH=$PROJECT_HOME/$SRC
 BIN_PATH=$PROJECT_HOME/$BIN
 RUNNABLE_PATH=$BIN_PATH/$RUNNABLE
-SOURCES_LIST_PATH=$SRC_PATH/$SOURCES_LIST
+SOURCES_LIST_PATH=$PROJECT_HOME/$SOURCES_LIST
 
 ################################################################################
 if [ -d $BIN_PATH ]; then
     rm -rf $BIN_PATH/*
 else 
-    mkdir $BIN__PATH
+    mkdir -p $BIN_PATH
 fi
 
 rm -f $SOURCES_LIST_PATH
