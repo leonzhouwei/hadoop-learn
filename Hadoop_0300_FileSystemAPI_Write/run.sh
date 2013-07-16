@@ -29,10 +29,6 @@ fi
 if [ ! -f $RUNNABLE_PATH ]; then
 	exit $ERROR_CODE does not exist or is not a file
 fi
-if [ ! -d $INPUT_DIR_PATH ]; then
-	echo $INPUT_DIR_PATH does not exist or is not a directory
-	exit $ERROR_CODE
-fi
 
 ################################################################################
 hadoop jar $RUNNABLE_PATH $JOB_CLASS_FULL_NAME $HDFS_INPUT_DIR_PATH $HDFS_OUTPUT_DIR_PATH
