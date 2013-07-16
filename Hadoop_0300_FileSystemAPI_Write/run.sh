@@ -4,8 +4,8 @@
 # modifiable
 RUNNABLE_PATH=/home/zhouwei/zhouwei/workspace/hadoop_home/Hadoop_0300_FileSystemAPI_Write/bin/fswrite.jar
 JOB_CLASS_FULL_NAME=org.myorg.FileCopyWithProgress
-HDFS_INPUT_DIR_PATH=/tmp/$JOB_CLASS_FULL_NAME/input
-HDFS_OUTPUT_DIR_PATH=/tmp/$JOB_CLASS_FULL_NAME/output
+HDFS_INPUT_DIR_PATH=/tmp/$JOB_CLASS_FULL_NAME/input/hello.txt
+HDFS_OUTPUT_DIR_PATH=/tmp/$JOB_CLASS_FULL_NAME/output/hello.txt
 
 ################################################################################
 # inner variables
