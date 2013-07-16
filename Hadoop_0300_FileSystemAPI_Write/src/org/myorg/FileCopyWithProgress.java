@@ -29,7 +29,7 @@ public class FileCopyWithProgress {
 					System.out.println("*");
 				}
 			};
-			in = fs.open(new Path(URI.create(from)));
+			in = fs.open(new Path(from));
 			out = fs.create(new Path(to), progress);
 			IOUtils.copyBytes(in, out, conf);
 			System.out.println("copying finished");
